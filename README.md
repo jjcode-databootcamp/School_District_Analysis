@@ -15,7 +15,7 @@ This analysis outlines the performance of all the high schools in a particular s
 
 ## Results:
 
-- How is the district summary affected?
+- District and School Metrics Summary: 
   - Discard Data Stats: 
     - Thomas High School 9th Grade Count: 461
     - Total School District Student Count - Before Data Removal: 39,170
@@ -25,25 +25,42 @@ This analysis outlines the performance of all the high schools in a particular s
     - ![Before Data Removal Analysis](Resources/before-data-removal-summary-district.png)
     - ![After Data Removal Analysis](Resources/after-data-removal-summary-district.png)
 
-  - Conclusion:
-    - There were minimal impact of the overall Thomas High School 9th grade cheating testing scores being dropped as you can see from the above tables. There was less then a 1% change to the passing test score results. This is probably due to the low number of the number of records dropped aka Thomas High School 9th graders.
-
-- How is the school summary affected?
-
+-------------------    
   - Summary of Top and Bottom 5 School Stats: 
-    - [Before Data Removal Analysis](Resources/before-data-removal-summary-school.png)
-    - [After Data Removal Analysis](Resources/after-data-removal-summary-school.png)
+    - Before Data Removal
+      - ![Before Data Removal Analysis](Resources/before-data-removal-summary-school.png)
+    - After Data Removal 
+      - ![After Data Removal Analysis](Resources/after-data-removal-summary-school.png)
 
-  - Conclusion:
-    - It appears Thomas High School is still within the top 5 school when the 9th grade class data was removed. It only had a 0.30% improvement of oveall passing test data when it was factor in. The 9th grade class seems to be in within normal range of the 10th to 12th grade test data at Thomas High School.
+  - Findings:
+    - There were minimal impact of the overall Thomas High School 9th grade cheating testing scores being dropped as you can see from the above tables. There was less then a 1% change to the passing test score results. This is probably due to the low number of the number of records dropped aka Thomas High School 9th graders who are suspected of cheating.
+    
+    - It appears Thomas High School is still within the top 5 school when the 9th grade class data was removed. It only had a 0.30% improvement of oveall passing test data when 9th grade data was factor in. The 9th grade class seems to be in within normal range of the 10th to 12th grade test data at Thomas High School. 
+    
+    - There seems to be very little effect on the other schools rankings. Thomas High School still appears to be rank number 2. Without the 9th grade data Thomas High School "% Overall Passing" only dropped by "0.31%"
 
-- How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
+    - The following is the 9th grade testing data that was replaced with "nan" for Thomas High School as follows below. The range, average for overall test scores for Thomas High School was not effected by the 9th grade data removal. 
+      - Math: 83.6
+        - ![Before Data Removal Analysis](Resources/before-data-removal-summary-by-grades-math.png)
+      - Reading: 83.7
+        - ![Before Data Removal Analysis](Resources/before-data-removal-summary-by-grades-reading.png)
 
-  - Summary of Top and Bottom 5 School Stats: 
-    - ![Before Data Removal Analysis](Resources/before-data-removal-summary-school.png)
-    - ![After Data Removal Analysis](Resources/after-data-removal-summary-school.png)
+    - As for school spending by group it appears there is a slight change in the "$630-644" group which contains "Thomas High School" of "0.08%" for "% Overall Passing"
+     - Before: 62.86%
+     - After:  62.78%
 
-  - Conclusion:
-    - It appears Thomas High School is still within the top 5 school when the 9th grade class data was removed. It only had a 0.30% improvement of oveall passing test data when 9th grade data was factor in. The 9th grade class seems to be in within normal range of the 10th to 12th grade test data at Thomas High School. There seems to be very little effect on the other schools rankings. 
+    - As for school size by group it appears there is a slight change in the "Medium (1000-2000)" group which contains "Thomas High School" of "0.06%" for "% Overall Passing"
+     - Before: 90.62%
+     - After:  90.56%
+
+    - As for school school type by group it appears there is a slight change in the "Medium (1000-2000)" group which contains "Thomas High School" of "0.04%" for "% Overall Passing"
+     - Before: 90.43%
+     - After:  90.39%
+
+
+
+
+
+
 
 
