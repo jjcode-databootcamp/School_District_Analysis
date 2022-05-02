@@ -10,8 +10,8 @@ This analysis outlines the performance of all the high schools in a particular s
 - Testing Scores: Reading and Math 
 
 ### Jupyter Notebook Links
-- [Before Data Removal Analysis](PyCitySchools_Original_Before_Data_Removal)
-- [After Data Removal Analysis](PyCitySchools_Challenge.ipynb)
+- [Before Data Removal Analysis](https://github.com/jjcode-databootcamp/School_District_Analysis/blob/main/PyCitySchools_Original_Before_Data_Removal.ipynb)
+- [After Data Removal Analysis](https://github.com/jjcode-databootcamp/School_District_Analysis/blob/main/PyCitySchools_Challenge.ipynb)
 
 ## Results:
 
@@ -43,19 +43,35 @@ This analysis outlines the performance of all the high schools in a particular s
       - Math: 83.6
         - ![Before Data Removal Analysis](Resources/before-data-removal-summary-by-grades-math.png)
       - Reading: 83.7
-        - ![Before Data Removal Analysis](Resources/before-data-removal-summary-by-grades-reading.png)
+        - ![After Data Removal Analysis](Resources/before-data-removal-summary-by-grades-reading.png)
 
     - As for school spending by group it appears there is a slight change in the "$630-644" group which contains "Thomas High School" of "0.08%" for "% Overall Passing"
      - Before: 62.86%
+        - ![Before Data Removal Analysis](Resources/before-data-removal-summary-spending-group.png)
      - After:  62.78%
+        - ![After Data Removal Analysis](Resources/after-data-removal-summary-spending-group.png)
 
     - As for school size by group it appears there is a slight change in the "Medium (1000-2000)" group which contains "Thomas High School" of "0.06%" for "% Overall Passing"
-     - Before: 90.62%
-     - After:  90.56%
+      - Before: 90.62%
+        - ![Before Data Removal Analysis](Resources/before-data-removal-summary-size-group.png)
+      - After:  90.56%
+        - ![After Data Removal Analysis](Resources/after-data-removal-summary-size-group.png)
+
 
     - As for school school type by group it appears there is a slight change in the "Medium (1000-2000)" group which contains "Thomas High School" of "0.04%" for "% Overall Passing"
-     - Before: 90.43%
-     - After:  90.39%
+      - Before: 90.43%
+        - ![Before Data Removal Analysis](Resources/before-data-removal-summary-school-type-group.png)
+
+      - After:  90.39%
+        - ![After Data Removal Analysis](Resources/after-data-removal-summary-school-type-group.png)
+
+## Summary
+Following changes were observed with the replacements of Thomas High School with NaNs
+
+1. There appears to be a very slight change of dropping the 9th grade data overall for the district 
+2. Only the groups that Thomas High School belong to saw any changes.
+3. Thomas High School still remains rank number 2 with the 9th grade data dropped
+4. Thomas High School is a charter school and overall charter school seems to perform way better then a district school even tho district school spends money per student. The "% Overall Passing" difference between a district and charter school is 36.72%.
 
 
 
